@@ -1,0 +1,69 @@
+<!-- doctype statement -->
+<!DOCTYPE html>
+<!-- root html element -->
+<html lang="en">
+<!-- Document head element -->
+
+<head>
+    <!-- head tag contains meta and title data content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander's Home Page</title>
+    <!-- link element, establishing site icon, can be used to link stylesheets -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <!-- scripts should go here, along with any links-->
+</head>
+<!-- Document body element -->
+
+<body>
+    <!-- a global header element that can hold global navigation, and other stuff -->
+    <header id="home-page-nav-tab">
+        <!-- img element embeds an image into the document -->
+        <img id="site-logo" src="/assets/images/site-logo.png"
+            alt="Logo displaying A, G, and A intitals with star and cancer ribbon" width="75" height="100">
+        <!-- nav element provides navigation links -->
+        <nav id="pages">
+            <!-- ul element is an unordered list -->
+            <ul>
+                <!-- li element represent an item in a list -->
+                <li class="page"><a href="/other_pages/about.html">About Me</a></li>
+                <li class="page"><a href="/other_pages/thoughts-and-projects.html">Thoughts and Projects</a></li>
+                <li class="page"><a href="/other_pages/interview.html">Interview</a></li>
+                <li class="page"><a href="/other_pages/contact.html">Contact Me</a></li>
+                <li class="page"><a href="/other_pages/resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main element represents the dominant content of the body tag of a doc, cant have more than one in a doc-->
+    <main>
+        <!-- h1 element is the highest heading of a document -->
+        <h1>Alexander G. Arias</h1>
+        <!-- template is a mechanism for holding HTML that is not to be rendered immediately when a page is loaded, instantiated by JS -->
+        <template><h2>Welcome to my Website!</h2></template>
+        <img id="suit-picture" src="/assets/images/alexander-in-nice-suit.jpg"
+            alt="Alexander in a nice suit looking at an angle, while crossing his hands and smiling" width="225"
+            height="350">
+        <h2>My Ethos:</h2>
+        <figure>
+            <!-- block quote element indicates extended quoatation -->
+            <blockquote>
+                <p>
+                    Regardless of the titles we inherit or earn, it is our enduring resilience and capacity to navigate
+                    the unresolved complexities of life that truly defines us. Amidst adversity and achievement, it is
+                    our ability to rise, persevere, and find our inner strength that remains the most significant
+                    testament to our character.
+                </p>
+            </blockquote>
+            <figcaption>— Alexander G. Arias</figcaption>
+        </figure>
+    </main>
+    <!-- Document footer element -->
+    <footer>
+        <!-- element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. -->
+        <hr>
+        <p>&copy;Copyright 2023 by <b>MathElderGod</b>&trade; All rights reserved.</p>
+        <p>By: Alexander G. Arias</p>
+    </footer>
+</body>
+
+</html>

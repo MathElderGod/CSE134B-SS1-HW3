@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander's Contact Page</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+
+<body>
+    <nav class="pages">
+        <ul>
+            <li class="page"><a href="/index.html">Home Page</a></li>
+            <li class="page"><a href="/other_pages/about.html">About Me</a></li>
+            <li class="page"><a href="/other_pages/thoughts-and-projects.html">Thoughts and Projects</a></li>
+            <li class="page"><a href="/other_pages/interview.html">Interview</a></li>
+            <li class="page"><a href="/other_pages/resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="contact-me-section">
+            <h1>Contact Me</h1>
+            <form>
+                <label for="name">Your Name: </label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <label for="email">Your Email: </label>
+                <input type="text" id="email" name="email" placeholder="JohnDoe@email.com" required><br><br>
+                <label for="subject">Subject: </label>
+                <input type="text" id="subject" name="subject" placeholder="Reaching out for Job Offer..."
+                    required><br><br>
+                <label for="message">Message: </label><br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message Here..."
+                    required></textarea>
+                <fieldset id="role">
+                    <legend>Who are you?</legend>
+                    <label for="recruiter">Recruiter</label>
+                    <input type="radio" id="recruiter" name="role" value="R" required><br>
+                    <label for="interviewer">Interviewer</label>
+                    <input type="radio" id="interviewer" name="role" value="I" required><br>
+                    <label for="peer">Peer</label>
+                    <input type="radio" id="peer" name="role" value="P" required><br>
+                </fieldset><br>
+                <fieldset id="favorite-icecream">
+                    <legend>What is your favorite icecream?</legend>
+                    <label for="ice-cream-choice">Choose a flavor:</label>
+                    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+                    <datalist id="ice-cream-flavors">
+                        <option value="Chocolate">
+                        <option value="Coconut">
+                        <option value="Mint">
+                        <option value="Strawberry">
+                        <option value="Vanilla">
+                    </datalist>
+                </fieldset><br>
+                <fieldset id="favorite-dinosaur">
+                    <legend>What is your favorite dinosaur?</legend>
+                    <label for="dino-select">Choose a dinosaur:</label>
+                    <select id="dino-select">
+                        <optgroup label="Theropods">
+                            <option>Tyrannosaurus</option>
+                            <option>Velociraptor</option>
+                            <option>Deinonychus</option>
+                        </optgroup>
+                        <optgroup label="Sauropods">
+                            <option>Diplodocus</option>
+                            <option>Saltasaurus</option>
+                            <option>Apatosaurus</option>
+                        </optgroup>
+                    </select>
+                </fieldset><br>
+                <button id="submit-button" type="submit">Send Message</button>
+            </form>
+        </section>
+        <section id="get-in-touch-section">
+            <h2 id="get-in-touch-heading">Get in Touch</h2>
+            <div id="address-info">
+                <p><img src="/assets/images/location-logo-bw.png" alt="location logo in black and white" width="25"
+                        height="25">La Jolla, CA 92037</p>
+            </div>
+            <div id="phone-info">
+                <p><img src="/assets/images/phone-logo.png" alt="phone logo in black and white" width="25"
+                        height="25"><a href="tel:760-996-4461">+1-760-996-4461</a></p>
+            </div>
+            <div id="mail-info">
+                <p><img src="/assets/images/email-logo.png" alt="mail logo in black and white" width="50" height="25"><a
+                        href="mailto:alexanderarias2@hotmail.com">alexanderarias2@hotmail.com</a></p>
+            </div>
+            <div id="linkedin-info">
+                <p><img src="/assets/images/linkedin-logo-bw.png" alt="linkedIn logo in black and white" width="25"
+                        height="25"><a
+                        href="https://www.linkedin.com/in/alexander-arias-1bb58a111">www.linkedin.com/in/alexander-arias-1bb58a111</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy;Copyright 2023 by <b>MathElderGod</b>&trade; All rights reserved.</p>
+        <p>By: Alexander G. Arias</p>
+    </footer>
+</body>
+
+</html>

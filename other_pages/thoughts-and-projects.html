@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander's Thoughts Page</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById('experiment-canvas');
+            var context = canvas.getContext('2d');
+            context.fillStyle = '#FF0000';
+            context.fillRect(20, 20, 150, 100);
+        };
+    </script>
+</head>
+
+<body>
+    <nav class="pages">
+        <ul>
+            <li class="page"><a href="/index.html">Home Page</a></li>
+            <li class="page"><a href="/other_pages/about.html">About Me</a></li>
+            <li class="page"><a href="/other_pages/interview.html">Interview</a></li>
+            <li class="page"><a href="/other_pages/contact.html">Contact Me</a></li>
+            <li class="page"><a href="/other_pages/resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <h1>Thoughts and Projects</h1>
+            <p>Welcome to my Thoughts and Projects page! This is a space where I'll be sharing my musings on various
+                aspects of
+                computer science, as well as the innovative projects I've worked on. Each post here serves as a
+                testament to my journey
+                and growth in the field. It's a mix of reflective thought pieces and tangible demonstrations of my
+                skills and passions.
+                So come, explore, and join me as I navigate through the fascinating landscape of computer science.</p>
+        </header>
+        <div id="left-container">
+            <img src="/assets/images/compression_picture.png" alt="picture of a compression example" height="100"
+                width="500">
+            <details>
+                <summary>Journeys Through Computer Science: Compression/Decompression and Encryption/Decription.
+                </summary>
+                <p>
+                    My journey through the vast landscape of Computer Science has led me to delve into intriguing
+                    niches, each with its
+                    unique set of challenges and rewards. Two of these exciting fields I've been exploring are
+                    compression and decompression
+                    via <a href="https://www.baeldung.com/cs/binary-tree-serialize-deserialize">Serialization and
+                        Deserialization of Binary Trees</a>,
+                    and encryption and decryption with SystemVerilog. They might appear quite different at first, but
+                    they're bound by the common
+                    threads of data transformation and the exploration of information.
+                </p>
+                <p>
+                    On the one hand, I was drawn to the intricate mechanics of serialization and deserialization of
+                    Binary Trees during my
+                    time at UCSD. This exploration revolved around encoding the structure of a binary tree into a more
+                    compact format for
+                    efficient storage or transmission - a process known as serialization. To retrieve the original tree,
+                    the compressed data
+                    would then be decompressed through deserialization. An example is provided in the above image, in
+                    which the serialization
+                    and deserialization algorithm was run. As you can see, it is not super good with small files,
+                    however, the larger the files
+                    the greater the compression. As you can see, I managed to compress an 826KB file and turn it into a
+                    104KB compressed file.
+                    This topic was extremely fascinating.
+                </p>
+                <p>
+                    On the other hand, I've also been intrigued by the magic of encryption and decryption through
+                    SystemVerilog. The
+                    challenge of operating on a hardware description and verification language level has been both a
+                    mind-bending puzzle and
+                    a delight. I've learned to craft secure systems through encryption and to unlock encrypted data
+                    through decryption. The
+                    pinnacle of this part of my journey has been successfully decrypting six polynomial encryptions in
+                    parallel - a
+                    challenge that tested my limits and expanded my capabilities.
+                </p>
+                <p>
+                    While these topics may seem separate, they share a fascinating overlap in the exploration of data
+                    manipulation. Both
+                    encryption and compression techniques manipulate data in ways that are intended to be reversible.
+                    And both have a wide
+                    range of applications in areas like data security, storage, and transmission. They show the breadth
+                    of what we can
+                    achieve with data when we really understand it.
+                </p>
+                <p>
+                    I invite you to visit my Projects page, where I've documented my journey in these fields, showcasing
+                    my endeavors and
+                    achievements. As my exploration continues, I look forward to sharing my experiences and insights
+                    with you.
+                </p>
+            </details>
+        </div>
+        <div id="middle-container">
+            <img src="/assets/images/mandelbrot.png" alt="pruple mandelbrot graphics picture" height="200" width="200">
+            <details>
+                <summary>The Magic of Computer Graphics and My Adventures in Crafting New Realities!</summary>
+                <p>
+                    My journey in computer science has always been about exploration and growth. One of the most
+                    fascinating territories
+                    I've ventured into is the realm of Computer Graphics - an area where the theoretical meets the
+                    visual, the mathematical
+                    intertwines with the artistic.
+                </p>
+                <p>
+                    At the heart of Computer Graphics, we find linear algebra - a subject I have found truly
+                    fascinating. It's an abstract
+                    field of mathematics that becomes strikingly tangible when applied to graphics. With every vector I
+                    manipulate or matrix
+                    I transform, I'm essentially shaping pixels to create my own realities.
+                </p>
+                <p>
+                    During my Computer Graphics course at UCSD, I've had the incredible opportunity to design and
+                    develop my own graphical
+                    algorithms. I've conjured up Mandelbrot fractals, those stunningly intricate images that capture the
+                    essence of
+                    mathematical beauty and chaos in a single frame. I've manipulated light via Blinn-Phong's reflection
+                    model, bathing my
+                    own digitally constructed scenes in various hues and intensities of light.
+                </p>
+                <p>
+                    Beyond the still, I've ventured into the dynamic, creating camera transformations using the
+                    Rodrigues rotation
+                    algorithm. This process imbued my digital scenes with a sense of movement and perspective, bringing
+                    them to life in ways
+                    that static images could never accomplish.
+                </p>
+                <p>
+                    I've even journeyed along the smooth curves of splines and Bezier curves, implementing De
+                    Casteljau's algorithm to
+                    render these shapes. To cap it all, I've delved into the intricate process of shadow mapping, adding
+                    depth and realism
+                    to my graphical creations.
+                </p>
+                <p>
+                    With each algorithm implemented and each project completed, I've grown immensely as a computer
+                    scientist and as a
+                    creator. Each one pushed me to new limits, challenging me to understand complex concepts, apply them
+                    effectively, and
+                    create something beautiful and functional.
+                </p>
+                <p>
+                    This continuous journey into the depths of Computer Graphics has made me appreciate even more how
+                    computer science is an
+                    incredibly diverse and dynamic field. It's a place where creativity and analytical thinking go hand
+                    in hand, creating
+                    mesmerizing results. As I continue my journey, I look forward to sharing more of my graphical
+                    adventures with you. Please check out my work in projects page! :)
+                </p>
+            </details>
+        </div>
+        <div id="right-container">
+            <img src="/assets/images/outreach.jpg" alt="outreach event, students sitting and working on stem project."
+                height="200" width="265">
+            <details>
+                <summary>Igniting a Revolution: Future Programmers of America and the Need for STEM Outreach!</summary>
+                <p>
+                    As a dedicated computer scientist and a proud veteran, my passion for service extends beyond the
+                    front lines to the
+                    minds of the future generation. Today, I wish to highlight a cause dear to my heart – the need for
+                    more focused and
+                    accessible Computer Science and STEM outreach for underprivileged youth in the United States.
+                </p>
+                <p>
+                    STEM education, particularly Computer Science, is no longer a luxury. It's an essential component of
+                    a holistic
+                    education in the 21st century. The transformative power of technology is indelible, and to shape a
+                    future where everyone
+                    has an equitable stake in this revolution, we must ensure our youth have the foundational knowledge
+                    to not just
+                    participate in, but to shape this digital landscape.
+                </p>
+                <p>
+                    Yet, many children, especially those from underprivileged backgrounds, are yet to receive their
+                    invite to this
+                    revolution. Limited access to resources, lack of awareness, and a shortage of role models in the
+                    field have contributed
+                    to this digital divide. It's a chasm that continues to widen with time, and we need a concerted,
+                    dedicated effort to
+                    bridge this gap.
+                </p>
+                <p>
+                    Inspired by the Future Farmers of America (FFA), an organization that has been pivotal in promoting
+                    and supporting
+                    agricultural education, I propose the creation of a new initiative – the Future Programmers of
+                    America (FPA). The FPA
+                    would aim to spark a passion for Computer Science and other STEM fields in the hearts of young
+                    learners, particularly
+                    those from underrepresented backgrounds.
+                </p>
+                <p>
+                    By providing access to resources, mentorship, and creating a community that encourages exploration
+                    and learning, the FPA
+                    could revolutionize how STEM education is approached in our country. We can transform passive
+                    consumers of technology
+                    into active contributors and creators, instilling not only the skills necessary for future careers
+                    but a sense of
+                    agency, empowerment, and confidence in our youth.
+                </p>
+                <p>
+                    As we look forward to the digital future, it's our responsibility to ensure no child is left behind.
+                    It is through
+                    initiatives like the FPA that we can ignite the flame of curiosity and passion in our youth, paving
+                    the way for a
+                    generation of innovators, problem solvers, and leaders. This is not merely a dream for a better
+                    education system, but a
+                    vision for a stronger, more inclusive America.
+                </p>
+                <p>
+                    In serving our youth, we are serving our nation. Let's join hands in this noble mission and continue
+                    to serve this
+                    beautiful country, one line of code at a time.
+                </p>
+            </details>
+        </div>
+        <section>
+            <hr>
+            <h2>Experiment: </h2>
+            <p>Here is an example of the Canvas HTML tag:</p>
+            <canvas id="experiment-canvas" width="200" height="100" style="border:1em solid #000000;">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+            <p>Here is an example of the SVG HTML tag:</p>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+            <hr>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy;Copyright 2023 by <b>MathElderGod</b>&trade; All rights reserved.</p>
+        <p>By: Alexander G. Arias</p>
+    </footer>
+</body>
+
+</html>
