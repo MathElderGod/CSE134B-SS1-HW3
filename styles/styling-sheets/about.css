@@ -104,7 +104,7 @@ p,
 #hobbies>*,
 #personal-info>* {
     font-family: 'pavanam-regular', Garamond, serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 h2 {
@@ -147,12 +147,14 @@ img {
     border: 0.4vw solid var(--dark-brown);
 }
 
-#cancer-picture, #soldier-picture {
+#cancer-picture,
+#soldier-picture {
     float: left;
     margin: 1.0em;
 }
 
-section#cancer-info p, section#person-info p {
+section#cancer-info p,
+section#person-info p {
     text-align: justify;
 }
 
