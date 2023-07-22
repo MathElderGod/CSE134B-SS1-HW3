@@ -67,8 +67,6 @@ li a {
     border-bottom: 0.1em solid var(--nav-border-color);
 }
 
-
-
 /* highlight which page we are currently on */
 li a#active {
     background-color: var(--active-nav-color);
@@ -112,6 +110,21 @@ img {
 p {
     font-family: 'pavanam-regular', Garamond, serif;
     font-size: 1.4em;
+}
+
+#img-project1 {
+    width: 50.0em;
+    height: 10.0em;
+}
+
+#img-project2 {
+    width: 20.0em;
+    height: 20.0em;
+}
+
+#img-project3 {
+    width: 25.0em;
+    height: 20.0em;
 }
 
 summary {

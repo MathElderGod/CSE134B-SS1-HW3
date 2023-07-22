@@ -172,6 +172,16 @@ div#linkedin-info {
     margin-left: 1.5em;
 }
 
+#address-logo, #phone-logo, #linkedIn-logo {
+    width: 3em;
+    height: 3em;
+}
+
+#mail-logo {
+    width: 5.5em;
+    height: 3em;
+}
+
 footer {
     background-color: var(--light-brown);
     margin-left: 11.5em;

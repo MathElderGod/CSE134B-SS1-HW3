@@ -147,6 +147,13 @@ img {
     border: 0.4vw solid var(--dark-brown);
 }
 
+#page-picture,
+#cancer-picture,
+#soldier-picture {
+    width: 15.0em;
+    height: 15.0em;
+}
+
 #cancer-picture,
 #soldier-picture {
     float: left;
