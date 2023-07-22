@@ -162,10 +162,18 @@ body {
 
 /* Tablet CSS*/
 @media screen and (min-width: 600px) and (max-width: 899px) {
+
     /* your tablet-specific CSS rules go here */
+    * {
+        border: 1em solid pink;
+    }
 }
 
 /* Mobile CSS*/
 @media screen and (max-width: 599px) {
+
     /* your mobile phone-specific CSS rules go here */
+    * {
+        border: 1em solid orange;
+    }
 }
