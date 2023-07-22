@@ -39,61 +39,53 @@ body {
 
 /* Desktop CSS */
 @media screen and (min-width: 900px) {
-    header {
-        margin-bottom: 2.0em;
-    }
 
-    /* editing the nav list for the home page */
+    /* editing the nav list for the about page */
     nav ul {
         /* remove the bullets, margins, and paddings from the list */
         list-style-type: none;
         margin: 0;
         padding: 0;
-        overflow: hidden;
+        width: 14.0em;
         background-color: var(--dark-gray);
-        border: 0.4vw solid black;
-
-        /* might not look good in mobile */
+        border: 0.3vw solid var(--navy-blue);
+        height: 100%;
         position: fixed;
-        top: 0;
         font-family: 'taviraj-regular', Arial, sans-serif;
     }
 
-    li {
-        float: left;
-        border-right: 0.15vw solid black;
-    }
-
-    li:last-child {
-        border-right: none;
-        float: right;
-    }
-
+    /* this style makes the nav link vertical */
     li a {
+        /* Displaying the links as block elements makes the whole link area clickable */
         display: block;
         color: white;
-        text-align: center;
+        width: 12.0em;
+        padding: 2.0em 1.0em;
         text-decoration: none;
+        text-align: center;
         font-weight: bold;
-        font-size: 1.3em;
-        padding: 2.0vw 4.0vw 2.0vw 4.0vw;
-        background-color: var(--dark-gray);
+        font-size: 1.0em;
+        border-bottom: 0.1em solid var(--navy-blue);
     }
 
-    li a:hover:not(#active) {
-        background-color: var(--navy-blue);
-    }
 
+
+    /* highlight which page we are currently on */
     li a#active {
         background-color: var(--active-nav-color);
         color: black;
     }
 
+    /* Change the link color on hover, if it is not id active */
+    li a:hover:not(#active) {
+        background-color: var(--navy-blue);
+        color: white;
+    }
+
     main {
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 4.0em;
-        margin-top: 5.0em;
+        display: block;
+        margin-left: 15em;
+        padding: 0.4em;
     }
 
     #main-heading {
@@ -158,10 +150,12 @@ body {
     footer {
         background-color: var(--dark-gray);
         padding: 0.5em;
+        margin-left: 11.5em;
         color: white;
         font-family: 'taviraj-regular', Arial, sans-serif;
         text-align: center;
         font-size: 1.3em;
+        border: 0.5vw solid var(--navy-blue);
     }
 
     figcaption {
