@@ -43,151 +43,169 @@ body {
     color: var(--dark-brown);
 }
 
-/* editing the nav list for the about page */
-nav ul {
-    /* remove the bullets, margins, and paddings from the list */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 14.0em;
-    background-color: var(--light-brown);
-    border: 0.3vw solid var(--nav-border-color);
-    height: 100%;
-    position: fixed;
-    font-family: 'taviraj-regular', Arial, sans-serif;
+/* Desktop CSS */
+@media screen and (min-width: 900px) {
+
+    /* editing the nav list for the about page */
+    nav ul {
+        /* remove the bullets, margins, and paddings from the list */
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 14.0em;
+        background-color: var(--light-brown);
+        border: 0.3vw solid var(--nav-border-color);
+        height: 100%;
+        position: fixed;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+    }
+
+    /* this style makes the nav link vertical */
+    li a {
+        /* Displaying the links as block elements makes the whole link area clickable */
+        display: block;
+        color: black;
+        width: 12.0em;
+        padding: 2.0em 1.0em;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.0em;
+        border-bottom: 0.1em solid var(--nav-border-color);
+    }
+
+    /* highlight which page we are currently on */
+    li a#active {
+        background-color: var(--active-nav-color);
+        color: white;
+    }
+
+    /* Change the link color on hover, if it is not id active */
+    li a:hover:not(#active) {
+        background-color: var(--dark-brown);
+        color: white;
+    }
+
+    main {
+        display: block;
+        margin-left: 15em;
+        padding: 0.4em;
+    }
+
+    h1 {
+        font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
+        font-size: 3.0em;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
+
+    p {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 1.25em;
+    }
+
+    h2 {
+        font-size: 2.0em;
+    }
+
+    h2 {
+        font-family: 'taviraj-regular', Arial, sans-serif;
+    }
+
+    h2::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
+
+    #contact-container {
+        display: flex;
+        background-color: white;
+        border: 0.25em solid var(--dark-brown);
+        width: fit-content;
+        height: fit-content;
+        padding: 0.5em;
+        margin: 0.5em 0.5em 2.0em 0.5em;
+    }
+
+    form {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 1.25em;
+        border-right: 0.15em solid var(--dark-brown);
+        padding: 0.5em;
+    }
+
+    label {
+        background-color: var(--light-green);
+        border-radius: 0.5em;
+        padding: 0.2em;
+        font-weight: bold;
+    }
+
+    legend {
+        background-color: var(--dark-brown);
+        color: white;
+        border-radius: 1.0em;
+        padding: 0.5em;
+        font-weight: bold;
+    }
+
+    button {
+        font-size: 1.0em;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        font-weight: bolder;
+        background-color: lightgray;
+
+    }
+
+    button:hover {
+        box-shadow: 0.1em 0.1em 0.1em 0.1em var(--dark-brown);
+    }
+
+
+    div#address-info,
+    div#phone-info,
+    div#linkedin-info {
+        margin-left: 1.5em;
+    }
+
+    #address-logo,
+    #phone-logo,
+    #linkedIn-logo {
+        width: 3em;
+        height: 3em;
+    }
+
+    #mail-logo {
+        width: 5.5em;
+        height: 3em;
+    }
+
+    footer {
+        background-color: var(--light-brown);
+        margin-left: 11.5em;
+        color: black;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        text-align: center;
+        font-size: 1.3em;
+        border: 0.5vw solid var(--nav-border-color);
+    }
 }
 
-/* this style makes the nav link vertical */
-li a {
-    /* Displaying the links as block elements makes the whole link area clickable */
-    display: block;
-    color: black;
-    width: 12.0em;
-    padding: 2.0em 1.0em;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.0em;
-    border-bottom: 0.1em solid var(--nav-border-color);
+
+
+/* Tablet CSS*/
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    /* your tablet-specific CSS rules go here */
 }
 
-/* highlight which page we are currently on */
-li a#active {
-    background-color: var(--active-nav-color);
-    color: white;
-}
-
-/* Change the link color on hover, if it is not id active */
-li a:hover:not(#active) {
-    background-color: var(--dark-brown);
-    color: white;
-}
-
-main {
-    display: block;
-    margin-left: 15em;
-    padding: 0.4em;
-}
-
-h1 {
-    font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
-    font-size: 3.0em;
-}
-
-h1::after {
-    content: "";
-    display: block;
-    width: 3.5em;
-    border-bottom: 0.1em solid var(--dark-brown);
-}
-
-p {
-    font-family: 'pavanam-regular', Garamond, serif;
-    font-size: 1.25em;
-}
-
-h2 {
-    font-size: 2.0em;
-}
-
-h2 {
-    font-family: 'taviraj-regular', Arial, sans-serif;
-}
-
-h2::after {
-    content: "";
-    display: block;
-    width: 3.5em;
-    border-bottom: 0.1em solid var(--dark-brown);
-}
-
-#contact-container {
-    display: flex;
-    background-color: white;
-    border: 0.25em solid var(--dark-brown);
-    width: fit-content;
-    height: fit-content;
-    padding: 0.5em;
-    margin: 0.5em 0.5em 2.0em 0.5em;
-}
-
-form {
-    font-family: 'pavanam-regular', Garamond, serif;
-    font-size: 1.25em;
-    border-right: 0.15em solid var(--dark-brown);
-    padding: 0.5em;
-}
-
-label {
-    background-color: var(--light-green);
-    border-radius: 0.5em;
-    padding: 0.2em;
-    font-weight: bold;
-}
-
-legend {
-    background-color: var(--dark-brown);
-    color: white;
-    border-radius: 1.0em;
-    padding: 0.5em;
-    font-weight: bold;
-}
-
-button {
-    font-size: 1.0em;
-    font-family: 'taviraj-regular', Arial, sans-serif;
-    font-weight: bolder;
-    background-color: lightgray;
-
-}
-
-button:hover {
-    box-shadow: 0.1em 0.1em 0.1em 0.1em var(--dark-brown);
-}
-
-
-div#address-info,
-div#phone-info,
-div#linkedin-info {
-    margin-left: 1.5em;
-}
-
-#address-logo, #phone-logo, #linkedIn-logo {
-    width: 3em;
-    height: 3em;
-}
-
-#mail-logo {
-    width: 5.5em;
-    height: 3em;
-}
-
-footer {
-    background-color: var(--light-brown);
-    margin-left: 11.5em;
-    color: black;
-    font-family: 'taviraj-regular', Arial, sans-serif;
-    text-align: center;
-    font-size: 1.3em;
-    border: 0.5vw solid var(--nav-border-color);
+/* Mobile CSS*/
+@media screen and (max-width: 599px) {
+    /* your mobile phone-specific CSS rules go here */
 }

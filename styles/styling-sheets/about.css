@@ -39,242 +39,258 @@ body {
     color: var(--dark-brown);
 }
 
-/* editing the nav list for the about page */
-nav ul {
-    /* remove the bullets, margins, and paddings from the list */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 14.0em;
-    background-color: var(--light-brown);
-    border: 0.3vw solid var(--nav-border-color);
-    height: 100%;
-    position: fixed;
-    font-family: 'taviraj-regular', Arial, sans-serif;
-}
+/* Desktop CSS */
+@media screen and (min-width: 900px) {
 
-/* this style makes the nav link vertical */
-li a {
-    /* Displaying the links as block elements makes the whole link area clickable */
-    display: block;
-    color: black;
-    width: 12.0em;
-    padding: 2.0em 1.0em;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.0em;
-    border-bottom: 0.1em solid var(--nav-border-color);
-}
+    /* editing the nav list for the about page */
+    nav ul {
+        /* remove the bullets, margins, and paddings from the list */
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 14.0em;
+        background-color: var(--light-brown);
+        border: 0.3vw solid var(--nav-border-color);
+        height: 100%;
+        position: fixed;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+    }
 
-
-
-/* highlight which page we are currently on */
-li a#active {
-    background-color: var(--active-nav-color);
-    color: white;
-}
-
-/* Change the link color on hover, if it is not id active */
-li a:hover:not(#active) {
-    background-color: var(--dark-brown);
-    color: white;
-}
-
-main {
-    display: block;
-    margin-left: 15em;
-    padding: 0.4em;
-}
-
-h1 {
-    font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
-    font-size: 3.0em;
-}
-
-h1::after {
-    content: "";
-    display: block;
-    width: 3.5em;
-    border-bottom: 0.1em solid var(--dark-brown);
-}
+    /* this style makes the nav link vertical */
+    li a {
+        /* Displaying the links as block elements makes the whole link area clickable */
+        display: block;
+        color: black;
+        width: 12.0em;
+        padding: 2.0em 1.0em;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.0em;
+        border-bottom: 0.1em solid var(--nav-border-color);
+    }
 
 
-p,
-#hobbies>*,
-#personal-info>* {
-    font-family: 'pavanam-regular', Garamond, serif;
-    font-size: 1.3em;
-}
 
-h2 {
-    font-size: 2.0em;
-}
+    /* highlight which page we are currently on */
+    li a#active {
+        background-color: var(--active-nav-color);
+        color: white;
+    }
 
-h3 {
-    font-size: 1.5em;
-}
+    /* Change the link color on hover, if it is not id active */
+    li a:hover:not(#active) {
+        background-color: var(--dark-brown);
+        color: white;
+    }
 
-h2,
-h3 {
-    font-family: 'taviraj-regular', Arial, sans-serif;
-}
+    main {
+        display: block;
+        margin-left: 15em;
+        padding: 0.4em;
+    }
 
-h2::after,
-h3:not(#poem-heading)::after {
-    content: "";
-    display: block;
-    width: 3.5em;
-    border-bottom: 0.1em solid var(--dark-brown);
-}
+    h1 {
+        font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
+        font-size: 3.0em;
+    }
 
-#professional-info-container {
-    display: flex;
-    padding: 1.0em;
-    align-items: center;
-}
+    h1::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
 
-#professional-info {
-    margin-left: 1.0em;
-}
 
-#personal-info {
-    display: flex;
-}
+    p,
+    #hobbies>*,
+    #personal-info>* {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 1.3em;
+    }
 
-img {
-    border-radius: 20%;
-    border: 0.4vw solid var(--dark-brown);
-}
+    h2 {
+        font-size: 2.0em;
+    }
 
-#page-picture,
-#cancer-picture,
-#soldier-picture {
-    width: 15.0em;
-    height: 15.0em;
-}
+    h3 {
+        font-size: 1.5em;
+    }
 
-#cancer-picture,
-#soldier-picture {
-    float: left;
-    margin: 1.0em;
-}
+    h2,
+    h3 {
+        font-family: 'taviraj-regular', Arial, sans-serif;
+    }
 
-section#cancer-info p,
-section#person-info p {
-    text-align: justify;
-}
+    h2::after,
+    h3:not(#poem-heading)::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
 
-#poem-section {
-    text-align: center;
-}
+    #professional-info-container {
+        display: flex;
+        padding: 1.0em;
+        align-items: center;
+    }
 
-#poem-heading {
-    text-decoration: underline;
-}
+    #professional-info {
+        margin-left: 1.0em;
+    }
 
-#poem-section p {
-    font-style: italic;
-    font-weight: bold;
-}
+    #personal-info {
+        display: flex;
+    }
 
-.experiment-box {
-    border: 0.25em solid var(--dark-brown);
-    background-color: red;
-    text-align: center;
-    padding: 2.0em;
-    width: 13.0em;
-    height: 3.0em;
-    font-weight: bold;
-    margin: 1.0em;
-    transition: width 2s, height 4s, transform 3s;
-    transition-delay: 1s;
-}
+    img {
+        border-radius: 20%;
+        border: 0.4vw solid var(--dark-brown);
+    }
 
-#experiment-box1:hover {
-    transform: rotate(180deg);
-}
+    #page-picture,
+    #cancer-picture,
+    #soldier-picture {
+        width: 15.0em;
+        height: 15.0em;
+    }
 
-#experiment-box2:hover {
-    transform: scale(1.5, 1.5);
-}
+    #cancer-picture,
+    #soldier-picture {
+        float: left;
+        margin: 1.0em;
+    }
 
-#experiment-box3:hover {
-    transform: rotate3d(1, 1, 1, 45deg);
-}
+    section#cancer-info p,
+    section#person-info p {
+        text-align: justify;
+    }
 
-#experiment-box4:hover {
-    width: 50.0em;
-    height: 6.0em;
-    transition-timing-function: ease;
-    transform: rotate(180deg);
-    animation-name: rainbow;
-    animation-duration: 4s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-}
+    #poem-section {
+        text-align: center;
+    }
 
-@keyframes rainbow {
-    0% {
+    #poem-heading {
+        text-decoration: underline;
+    }
+
+    #poem-section p {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .experiment-box {
+        border: 0.25em solid var(--dark-brown);
         background-color: red;
+        text-align: center;
+        padding: 2.0em;
+        width: 13.0em;
+        height: 3.0em;
+        font-weight: bold;
+        margin: 1.0em;
+        transition: width 2s, height 4s, transform 3s;
+        transition-delay: 1s;
     }
 
-    25% {
-        background-color: yellow;
+    #experiment-box1:hover {
+        transform: rotate(180deg);
     }
 
-    50% {
-        background-color: blue;
+    #experiment-box2:hover {
+        transform: scale(1.5, 1.5);
     }
 
-    100% {
-        background-color: green;
+    #experiment-box3:hover {
+        transform: rotate3d(1, 1, 1, 45deg);
+    }
+
+    #experiment-box4:hover {
+        width: 50.0em;
+        height: 6.0em;
+        transition-timing-function: ease;
+        transform: rotate(180deg);
+        animation-name: rainbow;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes rainbow {
+        0% {
+            background-color: red;
+        }
+
+        25% {
+            background-color: yellow;
+        }
+
+        50% {
+            background-color: blue;
+        }
+
+        100% {
+            background-color: green;
+        }
+    }
+
+    #experiment-box5 {
+        animation: squareAnimation 5s linear 2s infinite alternate;
+        position: relative;
+    }
+
+    @keyframes squareAnimation {
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background-color: yellow;
+            left: 200px;
+            top: 0px;
+        }
+
+        50% {
+            background-color: blue;
+            left: 200px;
+            top: 200px;
+        }
+
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 200px;
+        }
+
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    footer {
+        background-color: var(--light-brown);
+        margin-left: 11.5em;
+        color: black;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        text-align: center;
+        font-size: 1.3em;
+        border: 0.5vw solid var(--nav-border-color);
     }
 }
 
-#experiment-box5 {
-    animation: squareAnimation 5s linear 2s infinite alternate;
-    position: relative;
+
+
+/* Tablet CSS*/
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    /* your tablet-specific CSS rules go here */
 }
 
-@keyframes squareAnimation {
-    0% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-
-    25% {
-        background-color: yellow;
-        left: 200px;
-        top: 0px;
-    }
-
-    50% {
-        background-color: blue;
-        left: 200px;
-        top: 200px;
-    }
-
-    75% {
-        background-color: green;
-        left: 0px;
-        top: 200px;
-    }
-
-    100% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-}
-
-footer {
-    background-color: var(--light-brown);
-    margin-left: 11.5em;
-    color: black;
-    font-family: 'taviraj-regular', Arial, sans-serif;
-    text-align: center;
-    font-size: 1.3em;
-    border: 0.5vw solid var(--nav-border-color);
+/* Mobile CSS*/
+@media screen and (max-width: 599px) {
+    /* your mobile phone-specific CSS rules go here */
 }
