@@ -128,6 +128,7 @@ h2::after {
     width: 3.5em;
     border-bottom: 0.1em solid var(--dark-brown);
 }
+
 footer {
     background-color: var(--light-brown);
     margin-left: 11.5em;
