@@ -320,7 +320,6 @@ body {
 
     ul li a {
         display: block;
-        color: #000;
         padding: 8px 16px;
         text-decoration: none;
         text-align: center;
@@ -330,10 +329,10 @@ body {
 
     main {
         display: block;
+        margin: 1.0em;
     }
 
     #main-heading {
-        padding: 1.0vh;
         font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
         font-size: 30px;
         color: var(--dark-gray);
