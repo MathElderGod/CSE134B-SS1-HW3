@@ -145,6 +145,45 @@ body {
 /* Tablet CSS*/
 @media screen and (min-width: 600px) and (max-width: 899px) {
     /* your tablet-specific CSS rules go here */
+    nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            background-color: var(--light-brown);
+            position: relative;
+            height: auto;
+            overflow: auto;
+            font-family: 'taviraj-regular', Arial, sans-serif;
+            border: 4px solid var(--nav-border-color);
+        }
+    
+    li a {
+        float: left;
+        text-decoration: none;
+        font-size: 1.0em;
+        padding: 1.0em;
+        font-weight: bold;
+        color: black;
+        border-right: 0.1em solid var(--nav-border-color);
+    }
+
+    /* highlight which page we are currently on */
+    li a#active {
+        background-color: var(--active-nav-color);
+        color: white;
+    }
+
+    /* Change the link color on hover, if it is not id active */
+    li a:hover:not(#active) {
+        background-color: var(--dark-brown);
+        color: white;
+    }
+
+    nav ul li:last-child {
+        float: right;
+        border: none;
+    }
 }
 
 /* Mobile CSS*/
