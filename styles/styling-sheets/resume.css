@@ -261,6 +261,12 @@ body {
 
     li a {
         border-bottom: 3px solid var(--nav-border-color);
+        display: block;
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
     }
 
     /* highlight which page we are currently on */
@@ -275,13 +281,50 @@ body {
         color: white;
     }
 
-    li a {
+    main {
         display: block;
-        color: black;
-        padding: 8px 16px;
-        text-decoration: none;
+        margin: 1.0em;
+    }
+
+    h1 {
+        font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
+        font-size: 2.5em;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 2.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
+
+    p,
+    pre,
+    main ul {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 2.0em;
+        font-family: 'taviraj-regular', Arial, sans-serif;
         text-align: center;
-        font-weight: bold;
+    }
+
+    h2::after {
+        content: "";
+        display: block;
+        width: 80%;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
+
+    table,
+    td {
+        border: 0.2em solid var(--dark-brown);
+        padding: 0.5em;
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 1.1em;
+        text-align: center;
     }
 
     footer {
