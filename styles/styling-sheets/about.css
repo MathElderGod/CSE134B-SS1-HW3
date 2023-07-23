@@ -182,6 +182,12 @@ body {
         font-weight: bold;
     }
 
+    #experiment-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.0em;
+    }
+
     .experiment-box {
         border: 0.25em solid var(--dark-brown);
         background-color: red;
