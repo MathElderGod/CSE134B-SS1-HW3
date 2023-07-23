@@ -288,7 +288,7 @@ body {
 
     h1 {
         font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
-        font-size: 2.5em;
+        font-size: 30px;
     }
 
     h1::after {
@@ -302,11 +302,11 @@ body {
     pre,
     main ul {
         font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     h2 {
-        font-size: 2.0em;
+        font-size: 1.5em;
         font-family: 'taviraj-regular', Arial, sans-serif;
         text-align: center;
     }
