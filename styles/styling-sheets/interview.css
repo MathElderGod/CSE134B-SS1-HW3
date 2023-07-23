@@ -70,8 +70,6 @@ body {
         border-bottom: 0.1em solid var(--nav-border-color);
     }
 
-
-
     /* highlight which page we are currently on */
     li a#active {
         background-color: var(--active-nav-color);
@@ -119,9 +117,6 @@ body {
 
     h2 {
         font-size: 2.0em;
-    }
-
-    h2 {
         font-family: 'taviraj-regular', Arial, sans-serif;
     }
 
@@ -145,20 +140,21 @@ body {
 
 /* Tablet CSS*/
 @media screen and (min-width: 600px) and (max-width: 899px) {
+
     /* your tablet-specific CSS rules go here */
     nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: auto;
-            background-color: var(--light-brown);
-            position: relative;
-            height: auto;
-            overflow: auto;
-            font-family: 'taviraj-regular', Arial, sans-serif;
-            border: 4px solid var(--nav-border-color);
-        }
-    
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: var(--light-brown);
+        position: relative;
+        height: auto;
+        overflow: auto;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        border: 4px solid var(--nav-border-color);
+    }
+
     li a {
         float: left;
         text-decoration: none;
@@ -186,6 +182,49 @@ body {
         border: none;
     }
 
+    main {
+        display: block;
+        margin: 1.0em;
+    }
+
+    h1 {
+        font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
+        font-size: 2.5em;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
+
+    #interview-intro {
+        font-size: 1.3em;
+        font-family: 'pavanam-regular', Garamond, serif;
+    }
+
+    ol {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 1.3em;
+    }
+
+    .answer {
+        list-style: square;
+    }
+
+    h2 {
+        font-size: 2.0em;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+    }
+
+    h2::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
+
     footer {
         background-color: var(--light-brown);
         color: black;
@@ -198,20 +237,21 @@ body {
 
 /* Mobile CSS*/
 @media screen and (max-width: 599px) {
+
     /* your mobile phone-specific CSS rules go here */
     nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: auto;
-            background-color: var(--light-brown);
-            position: relative;
-            height: auto;
-            overflow: auto;
-            font-family: 'taviraj-regular', Arial, sans-serif;
-            border: 4px solid var(--nav-border-color);
-        }
-    
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: var(--light-brown);
+        position: relative;
+        height: auto;
+        overflow: auto;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        border: 4px solid var(--nav-border-color);
+    }
+
     li a {
         border-bottom: 3px solid var(--nav-border-color);
     }
@@ -235,6 +275,49 @@ body {
         text-decoration: none;
         text-align: center;
         font-weight: bold;
+    }
+
+    main {
+        display: block;
+        margin: 1.0em;
+    }
+
+    h1 {
+        font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
+        font-size: 30px;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
+
+    #interview-intro {
+        font-size: 1.3em;
+        font-family: 'pavanam-regular', Garamond, serif;
+    }
+
+    ol {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 1.3em;
+    }
+
+    .answer {
+        list-style: square;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+    }
+
+    h2::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
     }
 
     footer {
