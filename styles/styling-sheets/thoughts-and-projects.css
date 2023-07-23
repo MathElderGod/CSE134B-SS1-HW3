@@ -164,10 +164,6 @@ body {
 @media screen and (min-width: 600px) and (max-width: 899px) {
 
     /* your tablet-specific CSS rules go here */
-    * {
-        -border: 1em solid pink;
-    }
-
     nav ul {
         list-style-type: none;
         margin: 0;
@@ -208,6 +204,72 @@ body {
         border: none;
     }
 
+    main {
+        display: block;
+        margin: 1.0em;
+    }
+
+    h1 {
+        font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
+        font-size: 2.5em;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
+
+    div {
+        text-align: center;
+    }
+
+    img {
+        margin: 1.0vw;
+        border-radius: 2.0vw;
+        border: 0.5vw solid var(--dark-brown);
+    }
+
+    p {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 1.3em;
+    }
+
+    #img-project1 {
+        width: 40.0em;
+        height: 8.0em;
+    }
+
+    #img-project2 {
+        width: 15.0em;
+        height: 15.0em;
+    }
+
+    #img-project3 {
+        width: 20.0em;
+        height: 15.0em;
+    }
+
+    summary {
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        font-size: 1.3em;
+        background-color: var(--dark-brown);
+        color: white;
+        border-radius: 1.0em;
+        border: 0.3vw solid var(--light-brown);
+        padding: 0.5em;
+    }
+
+    details {
+        font-weight: 400;
+        font-size: 1.0em;
+        background-color: whitesmoke;
+        border: 0.3vw solid var(--dark-brown);
+        border-radius: 1.0em;
+        margin: 1.0vw;
+    }
+
     footer {
         background-color: var(--light-brown);
         color: black;
@@ -222,10 +284,6 @@ body {
 @media screen and (max-width: 599px) {
 
     /* your mobile phone-specific CSS rules go here */
-    * {
-        -border: 1em solid orange;
-    }
-
     nav ul {
         list-style-type: none;
         margin: 0;
