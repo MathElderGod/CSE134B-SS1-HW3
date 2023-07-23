@@ -236,4 +236,13 @@ body {
         text-align: center;
         font-weight: bold;
     }
+
+    footer {
+        background-color: var(--light-brown);
+        padding: 5px;
+        color: black;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        text-align: center;
+        font-size: 20px;
+    }
 }
