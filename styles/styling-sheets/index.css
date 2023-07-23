@@ -167,11 +167,6 @@ body {
 @media screen and (min-width: 600px) and (max-width: 899px) {
 
     /* your tablet-specific CSS rules go here */
-    * {
-        -border: 0.2em solid pink;
-    }
-
-    /* your mobile phone-specific CSS rules go here */
     ul {
         list-style-type: none;
         margin: 0;
