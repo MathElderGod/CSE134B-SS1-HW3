@@ -135,6 +135,7 @@ body {
         display: flex;
         padding: 1.0em;
         align-items: center;
+        justify-content: space-evenly;
     }
 
     #professional-info {
