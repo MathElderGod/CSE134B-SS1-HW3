@@ -184,6 +184,15 @@ body {
         float: right;
         border: none;
     }
+
+    footer {
+        background-color: var(--light-brown);
+        color: black;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        text-align: center;
+        font-size: 1.3em;
+        border: 0.5vw solid var(--nav-border-color);
+    }
 }
 
 /* Mobile CSS*/
