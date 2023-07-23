@@ -542,7 +542,7 @@ body {
         border: 4px solid var(--nav-border-color);
     }
 
-    li a {
+    nav li a {
         border-bottom: 3px solid var(--nav-border-color);
     }
 
