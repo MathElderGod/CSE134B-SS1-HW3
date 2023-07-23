@@ -287,7 +287,242 @@ body {
 
 /* Tablet CSS*/
 @media screen and (min-width: 600px) and (max-width: 899px) {
+
     /* your tablet-specific CSS rules go here */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: var(--light-brown);
+        position: relative;
+        height: auto;
+        overflow: auto;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        border: 4px solid var(--nav-border-color);
+    }
+
+    li a {
+        float: left;
+        text-decoration: none;
+        font-size: 1.0em;
+        padding: 1.0em;
+        font-weight: bold;
+        color: black;
+        border-right: 0.1em solid var(--nav-border-color);
+    }
+
+    /* highlight which page we are currently on */
+    li a#active {
+        background-color: var(--active-nav-color);
+        color: white;
+    }
+
+    /* Change the link color on hover, if it is not id active */
+    li a:hover:not(#active) {
+        background-color: var(--dark-brown);
+        color: white;
+    }
+
+    nav ul li:last-child {
+        float: right;
+        border: none;
+    }
+
+    main {
+        display: block;
+        margin: 1.0em;
+    }
+
+    h1 {
+        font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
+        font-size: 2.5em;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
+
+    p,
+    #hobbies>*,
+    #personal-info>* {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 2.0em;
+    }
+
+    h3 {
+        font-size: 1.7em;
+    }
+
+    h2,
+    h3 {
+        font-family: 'taviraj-regular', Arial, sans-serif;
+    }
+
+    h2::after,
+    h3:not(#poem-heading)::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        border-bottom: 0.1em solid var(--dark-brown);
+    }
+
+    #professional-info-container {
+        display: flex;
+        padding: 1.0em;
+        align-items: center;
+    }
+
+    #professional-info {
+        margin-left: 1.0em;
+    }
+
+    #personal-info {
+        display: block;
+    }
+
+    img {
+        border-radius: 20%;
+        border: 0.2em solid var(--dark-brown);
+    }
+
+    #page-picture,
+    #cancer-picture,
+    #soldier-picture {
+        width: 15.0em;
+        height: 15.0em;
+    }
+
+    #cancer-picture,
+    #soldier-picture {
+        float: left;
+        margin: 1.0em;
+    }
+
+    section#cancer-info p,
+    section#person-info p {
+        text-align: justify;
+    }
+
+    #poem-section {
+        text-align: center;
+    }
+
+    #poem-heading {
+        text-decoration: underline;
+    }
+
+    #poem-section p {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .experiment-box {
+        border: 0.25em solid var(--dark-brown);
+        background-color: red;
+        text-align: center;
+        padding: 2.0em;
+        width: 13.0em;
+        height: 3.0em;
+        font-weight: bold;
+        margin: 1.0em;
+        transition: width 2s, height 4s, transform 3s;
+        transition-delay: 1s;
+    }
+
+    #experiment-box1:hover {
+        transform: rotate(180deg);
+    }
+
+    #experiment-box2:hover {
+        transform: scale(1.5, 1.5);
+    }
+
+    #experiment-box3:hover {
+        transform: rotate3d(1, 1, 1, 45deg);
+    }
+
+    #experiment-box4:hover {
+        width: 50.0em;
+        height: 6.0em;
+        transition-timing-function: ease;
+        transform: rotate(180deg);
+        animation-name: rainbow;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes rainbow {
+        0% {
+            background-color: red;
+        }
+
+        25% {
+            background-color: yellow;
+        }
+
+        50% {
+            background-color: blue;
+        }
+
+        100% {
+            background-color: green;
+        }
+    }
+
+    #experiment-box5 {
+        animation: squareAnimation 5s linear 2s infinite alternate;
+        position: relative;
+    }
+
+    @keyframes squareAnimation {
+        0% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background-color: yellow;
+            left: 200px;
+            top: 0px;
+        }
+
+        50% {
+            background-color: blue;
+            left: 200px;
+            top: 200px;
+        }
+
+        75% {
+            background-color: green;
+            left: 0px;
+            top: 200px;
+        }
+
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    footer {
+        background-color: var(--light-brown);
+        color: black;
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        text-align: center;
+        font-size: 1.3em;
+        border: 0.5vw solid var(--nav-border-color);
+    }
 }
 
 /* Mobile CSS*/

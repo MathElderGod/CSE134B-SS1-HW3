@@ -209,6 +209,7 @@ body {
 
     main {
         display: block;
+        margin: 1.0em;
     }
 
     #main-heading {
@@ -233,7 +234,7 @@ body {
 
     #personal-container {
         display: flex;
-        margin: 1.5em;
+        margin: 1.5em 0.2em 1.5em 0.2em;
     }
 
     #suit-picture {
