@@ -296,7 +296,7 @@ body {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        width: 100%;
+        width: auto;
         background-color: var(--dark-gray);
         position: relative;
         height: auto;
