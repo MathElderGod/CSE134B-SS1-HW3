@@ -445,7 +445,7 @@ body {
         text-align: center;
         padding: 2.0em;
         width: fit-content;
-        height: 15.0vw;
+        height: fit-content;
         font-weight: bold;
         margin: 1.0em;
         transition: width 2s, height 4s, transform 3s;

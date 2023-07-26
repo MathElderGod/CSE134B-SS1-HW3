@@ -243,6 +243,10 @@ body {
         font-family: 'pavanam-regular', Garamond, serif;
     }
 
+    div {
+        padding: 1.5vw;
+    }
+
     ol {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -254,7 +258,7 @@ body {
     }
 
     ol li {
-        margin: 1.0vw;
+        margin: 2.0vw;
     }
 
     .question {
@@ -366,6 +370,7 @@ body {
     div {
         display: flex;
         flex-direction: column;
+        padding: 1.5vw;
     }
 
     ol {
