@@ -37,60 +37,66 @@
 body {
     background-color: var(--light-green);
     color: var(--dark-brown);
+    margin: 0;
+    padding: 0;
 }
 
 /* Desktop CSS */
-@media screen and (min-width: 900px) {
-
-    /* editing the nav list for the about page */
+@media screen and (min-width: 1025px) {
     nav ul {
-        /* remove the bullets, margins, and paddings from the list */
+        font-family: 'taviraj-regular', Arial, sans-serif;
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        width: 13.0vw;
+        height: 100%;
         margin: 0;
         padding: 0;
-        width: 14.0em;
-        background-color: var(--light-brown);
-        border: 0.3vw solid var(--nav-border-color);
-        height: 100%;
         position: fixed;
-        font-family: 'taviraj-regular', Arial, sans-serif;
+        background-color: var(--light-brown);
+        border: 0.3vw solid var(--dark-brown);
+        border-radius: 0.5em;
     }
 
-    /* this style makes the nav link vertical */
-    li a {
-        /* Displaying the links as block elements makes the whole link area clickable */
+    nav li a {
         display: block;
-        color: black;
-        width: 12.0em;
-        padding: 2.0em 1.0em;
+        font-weight: bold;
+        font-size: 0.925vw;
         text-decoration: none;
         text-align: center;
-        font-weight: bold;
-        font-size: 1.0em;
-        border-bottom: 0.1em solid var(--nav-border-color);
+        color: black;
+        width: 14.0em;
+        height: 4.15em;
+        padding-top: 2.5em;
     }
 
     /* highlight which page we are currently on */
-    li a#active {
+    nav li a#active {
         background-color: var(--active-nav-color);
+        border-bottom: 0.25em solid var(--dark-brown);
+        border-top: 0.25em solid var(--dark-brown);
         color: white;
     }
 
     /* Change the link color on hover, if it is not id active */
-    li a:hover:not(#active) {
+    nav li a:hover:not(#active) {
         background-color: var(--dark-brown);
+        border-radius: 0.5em;
         color: white;
     }
 
     main {
         display: block;
-        margin-left: 15em;
-        padding: 0.4em;
+        margin-left: 15.0vw;
+        padding: 0.5em;
     }
 
     h1 {
         font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
-        font-size: 3.0em;
+        font-size: 3.5vw;
     }
 
     h1::after {
@@ -100,16 +106,8 @@ body {
         border-bottom: 0.1em solid var(--dark-brown);
     }
 
-    p {
-        font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.25em;
-    }
-
     h2 {
-        font-size: 2.0em;
-    }
-
-    h2 {
+        font-size: 2.5vw;
         font-family: 'taviraj-regular', Arial, sans-serif;
     }
 
@@ -120,40 +118,48 @@ body {
         border-bottom: 0.1em solid var(--dark-brown);
     }
 
+    p {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 1.7vw;
+    }
+
     #contact-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.0vw;
         background-color: white;
-        border: 0.25em solid var(--dark-brown);
+        border: 0.25vw solid var(--dark-brown);
         width: fit-content;
         height: fit-content;
-        padding: 0.5em;
-        margin: 0.5em 0.5em 2.0em 0.5em;
+        padding: 1.5vw;
+        margin: 0.5vw 0.5vw 2.0vw 0.5vw;
     }
 
     form {
         font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.25em;
+        font-size: 1.7vw;
         border-right: 0.15em solid var(--dark-brown);
-        padding: 0.5em;
+        padding: 0.5vw;
     }
 
     label {
         background-color: var(--light-green);
-        border-radius: 0.5em;
-        padding: 0.2em;
+        border-radius: 0.5vw;
+        padding: 0.2vw;
         font-weight: bold;
     }
 
     legend {
-        background-color: var(--dark-brown);
-        color: white;
-        border-radius: 1.0em;
-        padding: 0.5em;
+        background-color: var(--light-brown);
+        color: black;
+        border: 0.25vw solid var(--dark-brown);
+        border-radius: 1.0vw;
+        padding: 0.5vw;
         font-weight: bold;
     }
 
     button {
-        font-size: 1.0em;
+        font-size: 1.7vw;
         font-family: 'taviraj-regular', Arial, sans-serif;
         font-weight: bolder;
         background-color: lightgray;
@@ -161,93 +167,91 @@ body {
     }
 
     button:hover {
-        box-shadow: 0.1em 0.1em 0.1em 0.1em var(--dark-brown);
+        box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw var(--dark-brown);
     }
 
 
     div#address-info,
     div#phone-info,
     div#linkedin-info {
-        margin-left: 1.5em;
+        margin-left: 1.8vw;
     }
 
     #address-logo,
     #phone-logo,
     #linkedIn-logo {
-        width: 3em;
-        height: 3em;
+        width: 5.0vw;
+        height: 5.0vw;
     }
 
     #mail-logo {
-        width: 5.5em;
-        height: 3em;
+        width: 8.5vw;
+        height: 5.0vw;
     }
 
     footer {
         background-color: var(--light-brown);
-        margin-left: 11.5em;
+        padding: 0.5em;
         color: black;
         font-family: 'taviraj-regular', Arial, sans-serif;
         text-align: center;
-        font-size: 1.3em;
-        border: 0.5vw solid var(--nav-border-color);
+        font-size: 1.5vw;
+        border: 0.25em solid var(--dark-brown);
+        border-radius: 0.5em;
+        margin-left: 14.5vw;
     }
 }
 
 
 
 /* Tablet CSS*/
-@media screen and (min-width: 600px) and (max-width: 899px) {
-
-    /* your tablet-specific CSS rules go here */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
     nav ul {
+        font-family: 'taviraj-regular', Arial, sans-serif;
         list-style-type: none;
+        width: auto;
+        height: auto;
+        overflow: hidden;
         margin: 0;
         padding: 0;
-        width: auto;
-        background-color: var(--light-brown);
         position: relative;
-        height: auto;
-        overflow: auto;
-        font-family: 'taviraj-regular', Arial, sans-serif;
-        border: 4px solid var(--nav-border-color);
+        background-color: var(--light-brown);
+        border: 4px solid var(--dark-brown);
+        border-radius: 0.5em;
     }
 
     li a {
         float: left;
         text-decoration: none;
-        font-size: 1.0em;
+        font-size: 2.1vw;
         padding: 1.0em;
         font-weight: bold;
         color: black;
-        border-right: 0.1em solid var(--nav-border-color);
     }
 
     /* highlight which page we are currently on */
     li a#active {
         background-color: var(--active-nav-color);
+        border-right: 0.25em solid var(--dark-brown);
+        border-left: 0.25em solid var(--dark-brown);
         color: white;
     }
 
     /* Change the link color on hover, if it is not id active */
     li a:hover:not(#active) {
         background-color: var(--dark-brown);
+        border-radius: 0.5em;
         color: white;
-    }
-
-    nav ul li:last-child {
-        float: right;
-        border: none;
     }
 
     main {
         display: block;
-        margin: 1.0em;
+        margin: 1.0vw;
     }
 
     h1 {
         font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
-        font-size: 2.5em;
+        font-size: 6.0vw;
     }
 
     h1::after {
@@ -257,57 +261,60 @@ body {
         border-bottom: 0.1em solid var(--dark-brown);
     }
 
-    p {
-        font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.3em;
-    }
-
     h2 {
-        font-size: 2.0em;
+        font-size: 5.0vw;
         font-family: 'taviraj-regular', Arial, sans-serif;
+        text-align: center;
     }
 
     h2::after {
         content: "";
         display: block;
-        width: 3.5em;
+        width: 80%;
         border-bottom: 0.1em solid var(--dark-brown);
     }
 
+    p {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 4.0vw;
+    }
+
     #contact-container {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background-color: white;
-        border: 0.25em solid var(--dark-brown);
-        width: auto;
-        height: auto;
-        padding: 0.5em;
-        margin: 0.2em;
+        border: 0.5vw solid var(--dark-brown);
+        height: fit-content;
+        padding: 1.5vw;
+        margin: 0.5vw 0.5vw 2.0vw 0.5vw;
     }
 
     form {
         font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.3em;
-        border-bottom: 0.15em solid var(--dark-brown);
-        padding: 0.5em;
+        font-size: 4.0vw;
+        border-bottom: 0.5vw solid var(--dark-brown);
+        padding: 1.0vw;
     }
 
     label {
         background-color: var(--light-green);
-        border-radius: 0.5em;
-        padding: 0.2em;
+        border-radius: 0.5vw;
+        padding: 0.2vw;
         font-weight: bold;
     }
 
     legend {
-        background-color: var(--dark-brown);
-        color: white;
-        border-radius: 1.0em;
-        padding: 0.5em;
+        background-color: var(--light-brown);
+        color: black;
+        border: 0.25vw solid var(--dark-brown);
+        border-radius: 1.0vw;
+        padding: 0.5vw;
         font-weight: bold;
     }
 
     button {
-        font-size: 1.0em;
+        font-size: 4.0vw;
         font-family: 'taviraj-regular', Arial, sans-serif;
         font-weight: bolder;
         background-color: lightgray;
@@ -315,87 +322,87 @@ body {
     }
 
     button:hover {
-        box-shadow: 0.1em 0.1em 0.1em 0.1em var(--dark-brown);
+        box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw var(--dark-brown);
     }
+
 
     div#address-info,
     div#phone-info,
     div#linkedin-info {
-        margin-left: 1.55em;
+        margin-left: 4.0vw;
     }
 
     #address-logo,
     #phone-logo,
     #linkedIn-logo {
-        width: 3em;
-        height: 3em;
+        width: 10.0vw;
+        height: 10.0vw;
     }
 
     #mail-logo {
-        width: 5.5em;
-        height: 3em;
+        width: 18.0vw;
+        height: 10.0vw;
     }
 
     footer {
         background-color: var(--light-brown);
+        padding: 0.5em;
         color: black;
         font-family: 'taviraj-regular', Arial, sans-serif;
         text-align: center;
-        font-size: 1.3em;
-        border: 0.5vw solid var(--nav-border-color);
+        font-size: 4.0vw;
+        border: 0.25em solid var(--dark-brown);
+        border-radius: 0.5em;
     }
 }
 
 /* Mobile CSS*/
 @media screen and (max-width: 599px) {
-
-    /* your mobile phone-specific CSS rules go here */
     nav ul {
+        font-family: 'taviraj-regular', Arial, sans-serif;
         list-style-type: none;
+        width: auto;
+        height: auto;
         margin: 0;
         padding: 0;
-        width: auto;
-        background-color: var(--light-brown);
         position: relative;
-        height: auto;
-        overflow: auto;
-        font-family: 'taviraj-regular', Arial, sans-serif;
-        border: 4px solid var(--nav-border-color);
+        background-color: var(--light-brown);
+        border: 1.0vw solid var(--dark-brown);
+        border-radius: 0.5em;
     }
 
     li a {
-        border-bottom: 3px solid var(--nav-border-color);
+        display: block;
+        font-weight: bold;
+        font-size: 5.0vw;
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        border-bottom: 3px solid var(--dark-brown);
     }
 
     /* highlight which page we are currently on */
     li a#active {
         background-color: var(--active-nav-color);
+        border-bottom: 0.25em solid var(--dark-brown);
         color: white;
     }
 
     /* Change the link color on hover, if it is not id active */
     li a:hover:not(#active) {
         background-color: var(--dark-brown);
+        border-radius: 0.5em;
         color: white;
-    }
-
-    li a {
-        display: block;
-        color: black;
-        padding: 8px 16px;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
     }
 
     main {
         display: block;
-        margin: 1.0em;
+        margin: 3.0vw;
     }
 
     h1 {
         font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
-        font-size: 30px;
+        font-size: 8.0vw;
     }
 
     h1::after {
@@ -405,57 +412,60 @@ body {
         border-bottom: 0.1em solid var(--dark-brown);
     }
 
-    p {
-        font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.3em;
-    }
-
     h2 {
-        font-size: 1.5em;
+        font-size: 6.0vw;
         font-family: 'taviraj-regular', Arial, sans-serif;
+        text-align: center;
     }
 
     h2::after {
         content: "";
         display: block;
-        width: 3.5em;
+        width: 80%;
         border-bottom: 0.1em solid var(--dark-brown);
     }
 
+    p {
+        font-family: 'pavanam-regular', Garamond, serif;
+        font-size: 5.0vw;
+    }
+
     #contact-container {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         background-color: white;
-        border: 0.25em solid var(--dark-brown);
-        width: fit-content;
+        border: 0.5vw solid var(--dark-brown);
         height: fit-content;
-        padding: 0.5em;
-        margin: 0.2em;
+        padding: 1.5vw;
+        margin: 0.5vw 0.5vw 2.0vw 0.5vw;
     }
 
     form {
         font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.3em;
-        border-bottom: 0.15em solid var(--dark-brown);
-        padding: 0.5em;
+        font-size: 5.0vw;
+        border-bottom: 0.5vw solid var(--dark-brown);
+        padding: 1.0vw;
     }
 
     label {
         background-color: var(--light-green);
-        border-radius: 0.5em;
-        padding: 0.2em;
+        border-radius: 0.5vw;
+        padding: 0.2vw;
         font-weight: bold;
     }
 
     legend {
-        background-color: var(--dark-brown);
-        color: white;
-        border-radius: 1.0em;
-        padding: 0.5em;
+        background-color: var(--light-brown);
+        color: black;
+        border: 0.25vw solid var(--dark-brown);
+        border-radius: 1.0vw;
+        padding: 0.5vw;
         font-weight: bold;
     }
 
     button {
-        font-size: 1.0em;
+        font-size: 5.0vw;
         font-family: 'taviraj-regular', Arial, sans-serif;
         font-weight: bolder;
         background-color: lightgray;
@@ -463,33 +473,36 @@ body {
     }
 
     button:hover {
-        box-shadow: 0.1em 0.1em 0.1em 0.1em var(--dark-brown);
+        box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw var(--dark-brown);
     }
+
 
     div#address-info,
     div#phone-info,
     div#linkedin-info {
-        margin-left: 1.3em;
+        margin-left: 4.5vw;
     }
 
     #address-logo,
     #phone-logo,
     #linkedIn-logo {
-        width: 2.0em;
-        height: 2.0em;
+        width: 10.0vw;
+        height: 10.0vw;
     }
 
     #mail-logo {
-        width: 4.0em;
-        height: 2.0em;
+        width: 18.5vw;
+        height: 10.0vw;
     }
 
     footer {
         background-color: var(--light-brown);
-        padding: 5px;
+        padding: 0.5em;
         color: black;
         font-family: 'taviraj-regular', Arial, sans-serif;
         text-align: center;
-        font-size: 20px;
+        font-size: 5.0vw;
+        border: 0.25em solid var(--dark-brown);
+        border-radius: 0.5em;
     }
 }

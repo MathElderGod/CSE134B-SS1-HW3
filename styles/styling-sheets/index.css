@@ -5,7 +5,6 @@
         url('/styles/fonts/robotomono-variablefont_wght.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -14,7 +13,6 @@
         url('/styles/fonts/robotomono-variablefont_wght.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -23,7 +21,6 @@
         url('/styles/fonts/pavanam-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 :root {
@@ -35,63 +32,65 @@
 
 body {
     background-color: var(--light-blue);
+    margin: 0;
+    padding: 0;
 }
 
 /* Desktop CSS */
-@media screen and (min-width: 900px) {
-
-    /* editing the nav list for the about page */
+@media screen and (min-width: 1025px) {
     nav ul {
-        /* remove the bullets, margins, and paddings from the list */
+        font-family: 'taviraj-regular', Arial, sans-serif;
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        width: 13.0vw;
+        height: 100%;
         margin: 0;
         padding: 0;
-        width: 14.0em;
+        position: fixed;
         background-color: var(--dark-gray);
         border: 0.3vw solid var(--navy-blue);
-        height: 100%;
-        position: fixed;
-        font-family: 'taviraj-regular', Arial, sans-serif;
+        border-radius: 0.5em;
     }
 
-    /* this style makes the nav link vertical */
     li a {
-        /* Displaying the links as block elements makes the whole link area clickable */
         display: block;
-        color: white;
-        width: 12.0em;
-        padding: 2.0em 1.0em;
+        font-weight: bold;
+        font-size: 0.925vw;
         text-decoration: none;
         text-align: center;
-        font-weight: bold;
-        font-size: 1.0em;
-        border-bottom: 0.1em solid var(--navy-blue);
+        color: white;
+        width: 14.0em;
+        height: 4.15em;
+        padding-top: 2.5em;
     }
-
-
 
     /* highlight which page we are currently on */
     li a#active {
         background-color: var(--active-nav-color);
+        border-bottom: 0.25em solid var(--navy-blue);
         color: black;
     }
 
     /* Change the link color on hover, if it is not id active */
     li a:hover:not(#active) {
         background-color: var(--navy-blue);
+        border-radius: 0.5em;
         color: white;
     }
 
     main {
         display: block;
-        margin-left: 15em;
-        padding: 0.4em;
+        margin-left: 15.0vw;
+        padding: 0.5em;
     }
 
-    #main-heading {
-        padding: 1.0vh;
+    h1 {
         font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
-        font-size: 3.0em;
+        font-size: 3.5vw;
         color: var(--dark-gray);
     }
 
@@ -103,26 +102,33 @@ body {
     }
 
     #main-intro {
+        padding: 1.0em;
         font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.5em;
+        font-size: 1.7vw;
         color: var(--navy-blue);
     }
 
     #personal-container {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+
     }
 
     #suit-picture {
-        border-radius: 20%;
+        border-radius: 5%;
         border: 0.5vw solid var(--navy-blue);
-        align-self: flex-start;
-        margin: 1.0vh 1.0vw 1.0vh 1.0vw;
+        margin: 1.0vh 1.0vw;
+        width: 25vw;
+        height: 25vw;
     }
 
-    #ethos-heading {
-        font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 2.0em;
-        color: var(--navy-blue);
+    h2 {
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        font-size: 2.0vw;
+        color: var(--dark-gray);
     }
 
     h2::after {
@@ -133,89 +139,87 @@ body {
     }
 
     #ethos-figure {
-        display: block;
         font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.5em;
+        font-size: 1.7vw;
         color: var(--dark-gray);
     }
 
     #main-quote {
         padding: 1.0em;
         background: var(--dark-gray);
-        border-radius: 1.0em;
+        border-radius: 0.5em;
         border: 0.2em solid var(--navy-blue);
         color: white;
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    figcaption {
+        margin: 0.5em;
+        font-weight: bold;
     }
 
     footer {
         background-color: var(--dark-gray);
         padding: 0.5em;
-        margin-left: 11.5em;
         color: white;
         font-family: 'taviraj-regular', Arial, sans-serif;
         text-align: center;
-        font-size: 1.3em;
-        border: 0.5vw solid var(--navy-blue);
-    }
-
-    figcaption {
-        font-weight: bold;
+        font-size: 1.5vw;
+        border: 0.25em solid var(--navy-blue);
+        border-radius: 0.5em;
+        margin-left: 14.5vw;
     }
 }
 
 /* Tablet CSS*/
-@media screen and (min-width: 600px) and (max-width: 899px) {
-
-    /* your tablet-specific CSS rules go here */
-    ul {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    nav ul {
+        font-family: 'taviraj-regular', Arial, sans-serif;
         list-style-type: none;
+        width: auto;
+        height: auto;
+        overflow: hidden;
         margin: 0;
         padding: 0;
-        width: auto;
-        background-color: var(--dark-gray);
         position: relative;
-        height: auto;
-        overflow: auto;
-        font-family: 'taviraj-regular', Arial, sans-serif;
+        background-color: var(--dark-gray);
         border: 4px solid var(--navy-blue);
+        border-radius: 0.5em;
     }
 
     li a {
         float: left;
         text-decoration: none;
-        font-size: 1.0em;
+        font-size: 2.1vw;
         padding: 1.0em;
         font-weight: bold;
         color: white;
-        border-right: 0.1em solid var(--navy-blue);
     }
 
     /* highlight which page we are currently on */
     li a#active {
         background-color: var(--active-nav-color);
+        border-right: 0.25em solid var(--navy-blue);
         color: black;
     }
 
     /* Change the link color on hover, if it is not id active */
     li a:hover:not(#active) {
         background-color: var(--navy-blue);
+        border-radius: 0.5em;
         color: white;
-    }
-
-    li:last-child {
-        float: right;
-        border: none;
     }
 
     main {
         display: block;
-        margin: 1.0em;
+        margin: 1.0vw;
     }
 
-    #main-heading {
+    h1 {
         padding: 1.0vh;
         font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
-        font-size: 2.5em;
+        font-size: 6.0vw;
         color: var(--dark-gray);
     }
 
@@ -228,49 +232,58 @@ body {
 
     #main-intro {
         font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.3em;
+        font-size: 4.0vw;
         color: var(--navy-blue);
     }
 
     #personal-container {
         display: flex;
-        margin: 1.5em 0.2em 1.5em 0.2em;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
     }
 
     #suit-picture {
-        border-radius: 20%;
-        border: 0.7vw solid var(--navy-blue);
-        align-self: flex-start;
-        margin: 1.0vh 1.0vw 1.0vh 1.0vw;
+        border-radius: 5%;
+        border: 0.5vw solid var(--navy-blue);
+        margin: 1.0vh 1.0vw;
+        width: 50vw;
+        height: 50vw;
     }
 
-    #ethos-heading {
-        font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.8em;
-        color: var(--navy-blue);
+    h2 {
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        font-size: 5.0vw;
+        color: var(--dark-gray);
     }
 
     h2::after {
         content: "";
         display: block;
-        width: 2.3em;
+        width: 2.0em;
         border-bottom: 0.1em solid var(--navy-blue);
     }
 
     #ethos-figure {
-        display: block;
         font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 1.5em;
+        font-size: 4.0vw;
         color: var(--dark-gray);
-        margin: 0;
     }
 
     #main-quote {
-        padding: 0.5em;
+        padding: 1.0em;
         background: var(--dark-gray);
-        border-radius: 1.0em;
+        border-radius: 0.5em;
         border: 0.2em solid var(--navy-blue);
         color: white;
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    figcaption {
+        margin: 0.5em;
+        font-weight: bold;
     }
 
     footer {
@@ -279,75 +292,72 @@ body {
         color: white;
         font-family: 'taviraj-regular', Arial, sans-serif;
         text-align: center;
-        font-size: 1.3em;
-        border: 0.5vw solid var(--navy-blue);
-    }
-
-    figcaption {
-        font-weight: bold;
+        font-size: 4.0vw;
+        border: 0.25em solid var(--navy-blue);
+        border-radius: 0.5em;
     }
 }
 
 /* Mobile CSS*/
 @media screen and (max-width: 599px) {
-
-    /* your mobile phone-specific CSS rules go here */
-    ul {
+    nav ul {
+        font-family: 'taviraj-regular', Arial, sans-serif;
         list-style-type: none;
+        width: auto;
+        height: auto;
         margin: 0;
         padding: 0;
-        width: auto;
-        background-color: var(--dark-gray);
         position: relative;
-        height: auto;
-        overflow: auto;
-        font-family: 'taviraj-regular', Arial, sans-serif;
-        border: 4px solid var(--navy-blue);
+        background-color: var(--dark-gray);
+        border: 1.0vw solid var(--navy-blue);
+        border-radius: 0.5em;
     }
 
-    li {
-        border-bottom: 3px solid var(--navy-blue);
-    }
-
-    li a:hover:not(#active) {
-        background-color: var(--navy-blue);
-    }
-
-    li a#active {
-        background-color: var(--active-nav-color);
-        color: black;
-    }
-
-    ul li a {
+    li a {
         display: block;
-        padding: 8px 16px;
+        font-weight: bold;
+        font-size: 5.0vw;
         text-decoration: none;
         text-align: center;
         color: white;
-        font-weight: bold;
+        border-bottom: 3px solid var(--navy-blue);
+    }
+
+    /* highlight which page we are currently on */
+    li a#active {
+        background-color: var(--active-nav-color);
+        border-bottom: 0.25em solid var(--navy-blue);
+        color: black;
+    }
+
+    /* Change the link color on hover, if it is not id active */
+    li a:hover:not(#active) {
+        background-color: var(--navy-blue);
+        border-radius: 0.5em;
+        color: white;
     }
 
     main {
         display: block;
-        margin: 1.0em;
+        margin: 1.0vw;
     }
 
-    #main-heading {
+    h1 {
         font-family: 'roboto-monoregular', "Times New Roman", Times, serif;
-        font-size: 30px;
+        font-size: 8.0vw;
         color: var(--dark-gray);
     }
 
     h1::after {
         content: "";
         display: block;
-        width: 100px;
+        width: 8.5em;
         border-bottom: 0.1em solid var(--navy-blue);
     }
 
     #main-intro {
         font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 20px;
+        font-size: 5.0vw;
         color: var(--navy-blue);
     }
 
@@ -355,57 +365,60 @@ body {
         display: block;
         align-items: center;
         align-content: center;
+        text-align: center;
     }
 
     #suit-picture {
         border-radius: 10%;
         border: 8px solid var(--navy-blue);
         align-self: center;
-        margin-left: 10vw;
-        height: auto;
-        width: auto;
+        height: 80vw;
+        width: 50vw;
     }
 
-    #ethos-heading {
-        font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 25px;
-        color: var(--navy-blue);
+    h2 {
+        font-family: 'taviraj-regular', Arial, sans-serif;
+        font-size: 6.0vw;
+        color: var(--dark-gray);
     }
 
     h2::after {
         content: "";
         display: block;
-        width: 50px;
+        width: 90vw;
         border-bottom: 0.1em solid var(--navy-blue);
     }
 
     #ethos-figure {
         font-family: 'pavanam-regular', Garamond, serif;
-        font-size: 20px;
+        font-size: 5.0vw;
         color: var(--dark-gray);
+        margin: 0;
     }
 
     #main-quote {
-        padding: 5px;
+        padding: 1.0em;
         background: var(--dark-gray);
-        border-radius: 5%;
-        border: 5px solid var(--navy-blue);
+        border-radius: 0.5em;
+        border: 0.2em solid var(--navy-blue);
         color: white;
-        text-align: center;
         margin: 0;
+        padding: 0.5em;
+    }
+
+    figcaption {
+        margin: 0.5em;
+        font-weight: bold;
     }
 
     footer {
         background-color: var(--dark-gray);
-        padding: 5px;
+        padding: 0.5em;
         color: white;
         font-family: 'taviraj-regular', Arial, sans-serif;
         text-align: center;
-        font-size: 20px;
-    }
-
-    figcaption {
-        font-weight: bold;
-        margin: 10px;
+        font-size: 5.0vw;
+        border: 0.25em solid var(--navy-blue);
+        border-radius: 0.5em;
     }
 }
