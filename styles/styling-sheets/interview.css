@@ -244,13 +244,12 @@ body {
     }
 
     div {
+        display: flex;
+        flex-direction: column;
         padding: 1.5vw;
     }
 
     ol {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5vw;
         font-family: 'pavanam-regular', Garamond, serif;
         font-size: 3.5vw;
         margin: 2.5vw;
